@@ -1,0 +1,37 @@
+This app is designed to make using web service djtxt much easier on an Android device.
+
+First let me explain djtxt and the idea for this app before I explain what the app does.
+
+------------------
+djtxt (http://djtxt.me/) is a Grooveshark (http://www.grooveshark.com) add-on/mashup/plugin - I don't know the proper word. djtxt is designed to have a party allow it's guests to control the music from their own phone.
+
+You hook up a computer to your sound system and follow the djtxt instructions and what djtxt does is it taps into the Grooveshark streaming database and let's a party have its guest send in requests for the queue via e-mail (also twitter and sms)
+
+My friends and I tried this out for our 2012 New Years party, and it went over very well!  But one of our biggest concerns was that if no one queues up music, all you'll hear is silence.  So I wanted to devise a way that I can just quickly send a few songs without typing them all out on my phone if that happened. So I figured an Android app that loads an already typed out list of songs and sends the emails in just 2 clicks would work perfectly and this app was born.
+
+Now a few months later I was digging through my folders looking for something unrelated, but came across this source code and figured I'd share it.  If anything it'll bring djtxt to the attention of more users, which it deserves.
+
+------------------
+Now for the app description
+
+This app loads a file located at the root of the SD Card or USB Storage on your device called "djtxt.me.txt"
+
+This file should just be a plain text file with lists of songs/artists you want to add to your queue. An example file is attached.
+
+It loads this file into a spinner (drop-down) and allows the users to select one of the songs, a djtxt command (skip or undo),  a blank entry or one to clear the log.
+
+After selecting an entry that is not the clear log one, a draft email screen is opened with all the info prefilled out.  
+TO: "dj@djtxt.me"
+SUBJECT: "DJtxtMe-AndroidApp"
+BODY: <your chosen song or command or blank>
+
+Blank was added to allow you to quickly open an email to send a song that you don't have on your list.
+
+It also keeps track of all the song requests you made.
+
+After diving back into this code for the first time in nearly a year, I found some ways to improve it, so I'll update this code a few times adding new features. Hope you enjoy.
+
+Any questions or concerns I'm available at android@stephenmilone.com  Thank you.
+
+I'm not affiliated with djtxt or it's developer. It's just a great service that I wanted to utilize more efficiently.
+
