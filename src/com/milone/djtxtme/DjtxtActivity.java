@@ -100,8 +100,9 @@ public class DjtxtActivity extends Activity implements OnClickListener {
 			minutes = String.valueOf(int_minutes);
 
 		// Start an email intent
+		String[] emailaddress = {"dj@djtxt.me"};
 		Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, "dj@djtxt.me");
+		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, emailaddress);
 		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
 				"DJtxt-AndroidApp");
 		emailIntent.setType("plain/text");
